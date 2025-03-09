@@ -5,8 +5,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e6f7ff; /* Light, calming blue background */
-      color: #333;
+      background-color: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 0;
       display: flex;
@@ -15,38 +15,44 @@
       min-height: 100vh;
     }
     header {
-      background-color: #007bff; /* Modern blue header */
-      color: white;
+      background-color: #1e1e1e;
+      color: #00b0ff;
       padding: 20px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     }
     main {
       width: 80%;
       max-width: 800px;
       margin: 20px 0;
       padding: 20px;
-      background-color: white;
+      background-color: #282828;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     }
     h1, h2 {
-      color: #007bff;
+      color: #00b0ff;
     }
     ul {
       list-style-type: disc;
       padding-left: 20px;
     }
     a {
-      color: #007bff;
+      color: #00b0ff;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
     .links {
-      margin-top:20px;
+      margin-top: 20px;
+    }
+    #manual-announcement {
+      background-color: #333;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -67,6 +73,12 @@
       <li><strong>Regular Checks:</strong> Perform regular checks on your train's systems. Report any malfunctions immediately.</li>
     </ul>
     <p>Remember, safety is everyone's responsibility. Let's work together to prevent accidents and keep our network running smoothly.</p>
+
+    <div id="manual-announcement">
+      <h2>Latest Announcement:</h2>
+      <p id="announcement-text">No announcements yet. Check back soon!</p>
+    </div>
+
   </main>
   <div class="links">
     <p>Join our community!</p>
