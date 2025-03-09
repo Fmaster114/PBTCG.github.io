@@ -4,44 +4,73 @@
   <title>Pinewood Traffic Control</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f7ff; /* Light, calming blue background */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #007bff; /* Modern blue header */
+      color: white;
+      padding: 20px;
+      width: 100%;
       text-align: center;
-      background-color: #f0f0f0; /* Light gray background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    h1 {
-      color: #3366cc; /* Blue heading */
-    }
-    .announcement {
-      background-color: #ffffff; /* White background for announcements */
-      border: 1px solid #cccccc; /* Light gray border */
-      padding: 10px;
-      margin: 20px auto;
+    main {
       width: 80%;
-      max-width: 600px;
+      max-width: 800px;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .links {
+      margin-top:20px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Pinewood Traffic Control</h1>
-
-  <div class="announcement">
-    <h2>Latest Announcement</h2>
-    <p>Attention all operators: Seismic activity detected! This is a red alert! Halt all trains immediately. Please remain stationary and stay put until further notice. Do not resume operation until the all-clear signal is given.</p>
-  </div>
-
-  <div class="announcement">
-    <h2>Train Safety Tips</h2>
+  <header>
+    <h1>Pinewood Traffic Control</h1>
+  </header>
+  <main>
+    <h2>Train Safety Guidelines</h2>
+    <p>Welcome, operators! Keeping our train network safe is our top priority. Please review these guidelines:</p>
     <ul>
-      <li>Follow all signal lights.</li>
-      <li>Maintain safe distances between trains.</li>
-      <li>Report any suspicious activity.</li>
+      <li><strong>Signal Lights:</strong> Always obey signal lights. Green means go, yellow means proceed with caution, and red means stop.</li>
+      <li><strong>Right of Way:</strong> Trains approaching from the right have the right of way. Yield to them.</li>
+      <li><strong>Speed Limits:</strong> Adhere to posted speed limits. Slow down in curves and intersections.</li>
+      <li><strong>Safe Distances:</strong> Maintain a safe following distance. Avoid tailgating other trains.</li>
+      <li><strong>Emergency Procedures:</strong> Familiarize yourself with emergency protocols. Know the location of emergency stops and safe zones.</li>
+      <li><strong>Communication:</strong> Use the radio to communicate with other operators and control.</li>
+      <li><strong>Regular Checks:</strong> Perform regular checks on your train's systems. Report any malfunctions immediately.</li>
     </ul>
+    <p>Remember, safety is everyone's responsibility. Let's work together to prevent accidents and keep our network running smoothly.</p>
+  </main>
+  <div class="links">
+    <p>Join our community!</p>
+    <a href="https://discord.gg/vkakRVU4QD" target="_blank">Discord Server</a> | <a href="https://www.roblox.com/communities/35720170/Pinewood-Builders-Traffic-Control-Group-PBTCG#!/about" target="_blank">Roblox Group</a>
   </div>
-
-  <div class="announcement">
-    <h2>Emergency Procedures</h2>
-    <p>In case of an emergency, follow all instructions given by Pinewood personnel. Evacuate to the designated safe zones.</p>
-  </div>
-
 </body>
 </html>
