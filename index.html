@@ -4,7 +4,7 @@
   <title>Pinewood Traffic Control</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif; /* Changed font */
+      font-family: 'Arial', sans-serif;
       background-color: #121212;
       color: #e0e0e0;
       margin: 0;
@@ -21,12 +21,6 @@
       width: 100%;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center; /* Align logo and heading */
-    }
-    header img {
-      height: 80px; /* Adjust logo size */
-      margin-right: 20px;
     }
     main {
       width: 80%;
@@ -44,31 +38,18 @@
       margin-bottom: 10px;
     }
     ul {
-      list-style-type: none; /* Remove default bullets */
+      list-style-type: none;
       padding: 0;
     }
     li {
       margin-bottom: 10px;
-      position: relative; /* For icon positioning */
-      padding-left: 30px; /* Add space for icon */
-    }
-    li::before { /* Add icons */
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      background-image: url('icon-train.png'); /* Replace with actual icon */
-      background-size: contain;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      position: relative;
+      padding-left: 30px;
     }
     a {
       color: #00b0ff;
       text-decoration: none;
-      transition: text-decoration 0.3s; /* Smooth hover effect */
+      transition: text-decoration 0.3s;
     }
     a:hover {
       text-decoration: underline;
@@ -84,21 +65,26 @@
     }
     hr {
       border: none;
-      border-top: 1px solid #444; /* Add dividers */
+      border-top: 1px solid #444;
       margin: 20px 0;
     }
-    details { /* Collapsible sections */
+    details {
       margin-bottom: 10px;
     }
     summary {
       cursor: pointer;
       font-weight: bold;
     }
+    .disclaimer { /* Style for the disclaimer */
+      text-align: center;
+      font-size: 14px;
+      color: #ffcc00; /* Yellowish color for warning */
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <img src="pinewood-logo.png" alt="Pinewood Builders Logo">
     <h1>Pinewood Traffic Control</h1>
   </header>
   <main>
@@ -132,16 +118,16 @@
     <section>
       <h2>FAQ</h2>
       <details>
-        <summary>How do I report a signal malfunction?</summary>
-        <p>Contact the control center immediately via radio or use the emergency contact information provided.</p>
+        <summary>How do I act when i Crash?</summary>
+        <p>Warn the Traffic Control and Delete all crashed trains to keep traffic flowing.</p>
       </details>
       <details>
-        <summary>What do I do if my train breaks down?</summary>
-        <p>Stop your train in a safe location, turn on your hazard lights, and contact the control center for assistance.</p>
+        <summary>What do I do if there is an Missle Attack?</summary>
+        <p>Delete and Stop your train and seek shelter. Also follow Security / PET's Instructions.</p>
       </details>
       <details>
         <summary>Where can I find the emergency procedures?</summary>
-        <p>Emergency procedures are posted at all stations and inside every train cabin. You can also find them on the Pinewood Builders Traffic Control Group Roblox page.</p>
+        <p>Emergency procedures are posted In our Discord Server. You can also ask A TC if available.</p>
       </details>
     </section>
     <hr>
@@ -153,6 +139,9 @@
   <div class="links">
     <p>Join our community!</p>
     <a href="https://discord.gg/vkakRVU4QD" target="_blank">Discord Server</a> | <a href="https://www.roblox.com/communities/35720170/Pinewood-Builders-Traffic-Control-Group-PBTCG#!/about" target="_blank">Roblox Group</a>
+  </div>
+  <div class="disclaimer">
+    ⚠️ PLEASE NOTE THAT WE AREN'T AN OFFICIAL GROUP! ⚠️
   </div>
 </body>
 </html>
