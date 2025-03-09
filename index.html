@@ -4,7 +4,7 @@
   <title>Pinewood Traffic Control</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Arial', sans-serif; /* Changed font */
       background-color: #121212;
       color: #e0e0e0;
       margin: 0;
@@ -21,6 +21,12 @@
       width: 100%;
       text-align: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center; /* Align logo and heading */
+    }
+    header img {
+      height: 80px; /* Adjust logo size */
+      margin-right: 20px;
     }
     main {
       width: 80%;
@@ -34,13 +40,35 @@
     h1, h2 {
       color: #00b0ff;
     }
+    h2 {
+      margin-bottom: 10px;
+    }
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      list-style-type: none; /* Remove default bullets */
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      position: relative; /* For icon positioning */
+      padding-left: 30px; /* Add space for icon */
+    }
+    li::before { /* Add icons */
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url('icon-train.png'); /* Replace with actual icon */
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
     a {
       color: #00b0ff;
       text-decoration: none;
+      transition: text-decoration 0.3s; /* Smooth hover effect */
     }
     a:hover {
       text-decoration: underline;
@@ -54,31 +82,73 @@
       border-radius: 5px;
       margin-top: 20px;
     }
+    hr {
+      border: none;
+      border-top: 1px solid #444; /* Add dividers */
+      margin: 20px 0;
+    }
+    details { /* Collapsible sections */
+      margin-bottom: 10px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="pinewood-logo.png" alt="Pinewood Builders Logo">
     <h1>Pinewood Traffic Control</h1>
   </header>
   <main>
-    <h2>Train Safety Guidelines</h2>
-    <p>Welcome, operators! Keeping our train network safe is our top priority. Please review these guidelines:</p>
-    <ul>
-      <li><strong>Signal Lights:</strong> Always obey signal lights. Green means go, yellow means proceed with caution, and red means stop.</li>
-      <li><strong>Right of Way:</strong> Trains approaching from the right have the right of way. Yield to them.</li>
-      <li><strong>Speed Limits:</strong> Adhere to posted speed limits. Slow down in curves and intersections.</li>
-      <li><strong>Safe Distances:</strong> Maintain a safe following distance. Avoid tailgating other trains.</li>
-      <li><strong>Emergency Procedures:</strong> Familiarize yourself with emergency protocols. Know the location of emergency stops and safe zones.</li>
-      <li><strong>Communication:</strong> Use the radio to communicate with other operators and control.</li>
-      <li><strong>Regular Checks:</strong> Perform regular checks on your train's systems. Report any malfunctions immediately.</li>
-    </ul>
-    <p>Remember, safety is everyone's responsibility. Let's work together to prevent accidents and keep our network running smoothly.</p>
-
-    <div id="manual-announcement">
-      <h2>Latest Announcement:</h2>
-      <p id="announcement-text">No announcements yet. Check back soon!</p>
-    </div>
-
+    <section>
+      <h2>About Us</h2>
+      <p>The Pinewood Builders Traffic Control Group is dedicated to ensuring the safe and efficient operation of our railway network. We strive to maintain order and prevent accidents through clear communication, comprehensive training, and strict adherence to safety protocols.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Train Safety Guidelines</h2>
+      <p>Welcome, operators! Keeping our train network safe is our top priority. Please review these guidelines:</p>
+      <ul>
+        <li><strong>Signal Lights:</strong> Always obey signal lights. Green means go, yellow means proceed with caution, and red means stop.</li>
+        <li><strong>Right of Way:</strong> Trains approaching from the right have the right of way. Yield to them.</li>
+        <li><strong>Speed Limits:</strong> Adhere to posted speed limits. Slow down in curves and intersections.</li>
+        <li><strong>Safe Distances:</strong> Maintain a safe following distance. Avoid tailgating other trains.</li>
+        <li><strong>Emergency Procedures:</strong> Familiarize yourself with emergency protocols. Know the location of emergency stops and safe zones.</li>
+        <li><strong>Communication:</strong> Use the radio to communicate with other operators and control.</li>
+        <li><strong>Regular Checks:</strong> Perform regular checks on your train's systems. Report any malfunctions immediately.</li>
+      </ul>
+      <p>Remember, safety is everyone's responsibility. Let's work together to prevent accidents and keep our network running smoothly.</p>
+    </section>
+    <hr>
+    <section>
+      <h2>Latest Announcement</h2>
+      <div id="manual-announcement">
+        <p id="announcement-text">No announcements yet. Check back soon!</p>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h2>FAQ</h2>
+      <details>
+        <summary>How do I report a signal malfunction?</summary>
+        <p>Contact the control center immediately via radio or use the emergency contact information provided.</p>
+      </details>
+      <details>
+        <summary>What do I do if my train breaks down?</summary>
+        <p>Stop your train in a safe location, turn on your hazard lights, and contact the control center for assistance.</p>
+      </details>
+      <details>
+        <summary>Where can I find the emergency procedures?</summary>
+        <p>Emergency procedures are posted at all stations and inside every train cabin. You can also find them on the Pinewood Builders Traffic Control Group Roblox page.</p>
+      </details>
+    </section>
+    <hr>
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have any questions or concerns, please contact us through our <a href="https://discord.gg/vkakRVU4QD" target="_blank">Discord Server</a>.</p>
+    </section>
   </main>
   <div class="links">
     <p>Join our community!</p>
